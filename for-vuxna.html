@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>För vuxna — KOMPASS</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal: #5E8F9A;
+  --teal-dark: #1A3A40;
+  --teal-mid: #3D7A85;
+  --coral: #FF6B6B;
+  --cream: #F0F8F9;
+  --light: #E0F4F6;
+  --mid: #4A6B72;
+  --display: 'Fraunces', serif;
+  --body: 'Plus Jakarta Sans', sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--cream); color: var(--teal-dark); font-family: var(--body); font-weight:300; line-height:1.7; }
+
+nav {
+  position: fixed; top:0; left:0; right:0; z-index:100;
+  padding: 16px 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(240,248,249,0.96); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(94,143,154,0.15);
+}
+.nav-logo { font-family: var(--display); font-weight:900; font-size:22px; color:var(--teal-dark); text-decoration:none; letter-spacing:0.06em; }
+.nav-links { display:flex; gap:32px; list-style:none; align-items:center; }
+.nav-links a { text-decoration:none; color:var(--mid); font-size:14px; font-weight:500; transition:color 0.2s; }
+.nav-links a:hover { color:var(--coral); }
+.nav-cta { background:var(--coral) !important; color:#fff !important; padding:10px 22px; border-radius:100px; font-weight:600 !important; }
+
+.hero-sub {
+  min-height: 42vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  padding: 120px 48px 60px;
+  background: var(--teal-dark);
+  position: relative; overflow: hidden;
+}
+.hero-sub::before {
+  content:''; position:absolute; inset:0;
+  background: radial-gradient(ellipse at 60% 40%, #243868 0%, #1A3A40 60%, #0D1F24 100%);
+}
+.hero-sub-content { position:relative; z-index:1; max-width:700px; }
+.hero-sub-chip { display:inline-block; font-size:11px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--coral); margin-bottom:14px; }
+.hero-sub h1 { font-family:var(--display); font-size:clamp(36px,6vw,72px); font-weight:900; color:#fff; line-height:1.1; margin-bottom:20px; }
+.hero-sub h1 em { font-style:italic; color:var(--coral); }
+.hero-sub p { font-size:17px; color:rgba(255,255,255,0.65); font-weight:300; line-height:1.85; }
+.back-btn { display:inline-flex; align-items:center; gap:8px; margin-bottom:28px; color:rgba(255,255,255,0.6); text-decoration:none; font-size:13px; font-weight:500; }
+.back-btn:hover { color:#fff; }
+
+.section-wrap { padding: 72px 48px; max-width: 900px; margin: 0 auto; }
+.section-chip { display:inline-block; font-size:11px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--coral); margin-bottom:12px; }
+.section-title { font-family:var(--display); font-size:clamp(28px,4vw,44px); font-weight:900; color:var(--teal-dark); margin-bottom:16px; line-height:1.15; }
+.section-title em { font-style:italic; color:var(--teal-mid); }
+.section-text { font-size:16px; color:var(--mid); line-height:1.95; margin-bottom:16px; }
+
+.activity-card {
+  background:#fff; border-radius:16px; padding:28px 32px;
+  border-left:4px solid var(--coral); margin-bottom:20px;
+  box-shadow: 0 2px 16px rgba(94,143,154,0.08);
+}
+.activity-card.teal-border { border-left-color: var(--teal); }
+.activity-card h3 { font-family:var(--display); font-size:20px; font-weight:700; color:var(--teal-dark); margin-bottom:10px; }
+.activity-card p { font-size:15px; color:var(--mid); margin-bottom:8px; line-height:1.85; }
+.activity-meta { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+.meta-pill { background:var(--light); color:var(--teal-dark); padding:5px 14px; border-radius:100px; font-size:12px; font-weight:600; }
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.info-box {
+  background: var(--light);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+.info-box .icon { font-size: 28px; margin-bottom: 8px; display: block; }
+.info-box h4 { font-family: var(--display); font-size: 15px; font-weight: 700; color: var(--teal-dark); margin-bottom: 4px; }
+.info-box p { font-size: 13px; color: var(--mid); margin: 0; }
+
+.quote-box {
+  background: var(--teal-dark);
+  border-radius: 16px;
+  padding: 32px;
+  margin: 32px 0;
+}
+.quote-box p {
+  font-family: var(--display);
+  font-size: clamp(16px, 2vw, 22px);
+  font-style: italic;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.coming-box {
+  background: var(--light); border-radius:16px; padding:28px 32px;
+  border: 1.5px dashed rgba(94,143,154,0.4); margin-bottom:20px;
+}
+.coming-box h3 { font-family:var(--display); font-size:18px; color:var(--teal-mid); margin-bottom:8px; font-weight:700; }
+.coming-box p { font-size:14px; color:var(--mid); }
+
+.divider { height:1px; background:rgba(94,143,154,0.15); margin:48px 0; }
+
+.instagram-box {
+  background: linear-gradient(135deg, var(--teal-dark), var(--teal-mid));
+  border-radius:20px; padding:40px; text-align:center; margin-top:48px;
+}
+.instagram-box h3 { font-family:var(--display); font-size:26px; font-weight:700; color:#fff; margin-bottom:12px; }
+.instagram-box p { font-size:15px; color:rgba(255,255,255,0.7); margin-bottom:24px; }
+.instagram-box a {
+  display:inline-flex; align-items:center; gap:10px;
+  background:var(--coral); color:#fff; padding:14px 28px; border-radius:100px;
+  text-decoration:none; font-weight:600; font-size:15px; transition:all 0.2s;
+}
+.instagram-box a:hover { background:#fff; color:var(--teal-dark); }
+
+footer { background:var(--teal-dark); padding:40px 48px; text-align:center; }
+footer .footer-logo { font-family:var(--display); font-size:22px; font-weight:900; color:#fff; letter-spacing:0.08em; margin-bottom:8px; }
+footer p { font-size:12px; color:rgba(255,255,255,0.3); }
+
+@media(max-width:768px) {
+  nav { padding:14px 20px; }
+  .nav-links { display:none; }
+  .hero-sub { padding:100px 24px 48px; }
+  .section-wrap { padding:48px 24px; }
+  footer { padding:32px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">KOMPASS</a>
+  <ul class="nav-links">
+    <li><a href="index.html#om-oss">Om oss</a></li>
+    <li><a href="index.html#program">Program & kurser</a></li>
+    <li><a href="index.html#stod">Stöd oss</a></li>
+    <li><a href="index.html#kontakt" class="nav-cta">Kontakta oss</a></li>
+  </ul>
+</nav>
+
+<div class="hero-sub">
+  <div class="hero-sub-content">
+    <a href="index.html#program" class="back-btn">← Tillbaka till program</a>
+    <div class="hero-sub-chip">Program för vuxna</div>
+    <h1>Kurser och stöd för <em>vuxna</em></h1>
+    <p>Vi hjälper vuxna att navigera samhällets system — utan pekpinnar, utan krav och utan kostnad. Vi ersätter inte myndigheter, vi stärker din förmåga att klara det själv.</p>
+  </div>
+</div>
+
+<div class="section-wrap">
+
+  <div class="section-chip">Pågående program</div>
+  <h2 class="section-title">Digital vägledning i <em>e-ansökan</em></h2>
+
+  <div class="activity-card teal-border">
+    <h3>💻 Digital vägledning — Försörjningsstöd e-ansökan</h3>
+    <p>Har du svårt att ansöka om försörjningsstöd digitalt? Kom till oss! Varje tillfälle är upplagt som en kurs — första timmen går vi tillsammans igenom hur e-tjänsten fungerar steg för steg. Andra timmen får du prova själv med oss närvarande som stöd.</p>
+    <p>Ingen förkunskap krävs — bara att dyka upp.</p>
+    <div class="activity-meta">
+      <span class="meta-pill">📅 Måndagar från 20 april</span>
+      <span class="meta-pill">🕓 16:00–18:00</span>
+      <span class="meta-pill">📍 Stockholms Stadsmission, Vårberg</span>
+      <span class="meta-pill">💛 Gratis</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- KOMMANDE -->
+  <div class="section-chip">Kommande program</div>
+  <h2 class="section-title">På gång hos <em>KOMPASS</em></h2>
+
+  <div class="coming-box">
+    <h3>📚 Läxhjälp för SFI-studier</h3>
+    <p>Studerar du SFI och vill ha extra stöd? Vi planerar att starta läxhjälp för SFI-studerande — ett tryggt och välkomnande sammanhang där du kan öva och få hjälp. Mer info kommer snart!</p>
+  </div>
+
+
+
+  <div class="instagram-box">
+    <h3>Följ oss på Instagram</h3>
+    <p>Vi annonserar nya kurser och aktiviteter flitigast på Instagram. Följ oss så är du alltid uppdaterad!</p>
+    <a href="https://instagram.com/kompassforening" target="_blank">📱 @kompassforening</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">KOMPASS</div>
+  <p>Ideell förening · Org.nr 802538-3897 · Skärholmen, Stockholm</p>
+  <p style="margin-top:6px;">BG 5215-8854 · PG 216 95 05-1 · info@kompassforening.se</p>
+</footer>
+
+</body>
+</html>

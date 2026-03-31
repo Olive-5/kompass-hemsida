@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="KOMPASS är en ideell förening i Stockholm som stärker självförtroende och egenmakt hos barn, unga och vuxna i utsatta områden. Kurser, stödprogram och aktiviteter i Skärholmen och hela Stockholm.">
+  <meta name="keywords" content="KOMPASS förening, ideell förening Stockholm, stödprogram barn unga vuxna, Skärholmen, egenmakt, integration, digital vägledning, försörjningsstöd, SFI läxhjälp, aktiviteter barn Stockholm, ungdomsverksamhet Stockholm">
+  <meta name="author" content="KOMPASS Ideell Förening">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#5E8F9A">
+  <meta name="geo.region" content="SE-AB">
+  <meta name="geo.placename" content="Stockholm">
+  <link rel="canonical" href="https://www.kompassforening.se/">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.kompassforening.se/">
+  <meta property="og:title" content="KOMPASS – Vi hittar vägen tillsammans">
+  <meta property="og:description" content="Ideell förening i Stockholm som stärker självförtroende och egenmakt hos barn, unga och vuxna. Gratis kurser, stödprogram och aktiviteter.">
+  <meta property="og:locale" content="sv_SE">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KOMPASS – Vi hittar vägen tillsammans">
+  <meta name="twitter:description" content="Ideell förening i Stockholm som stärker självförtroende och egenmakt hos barn, unga och vuxna i utsatta områden.">
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "KOMPASS",
+    "description": "Ideell förening som stärker självförtroende och egenmakt hos barn, unga och vuxna i utsatta områden i Stockholm.",
+    "url": "https://www.kompassforening.se",
+    "email": "info@kompassforening.se",
+    "telephone": "073-261 31 63",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Skärholmen",
+      "addressRegion": "Stockholm",
+      "addressCountry": "SE"
+    },
+    "foundingDate": "2025",
+    "areaServed": "Stockholm",
+    "sameAs": ["https://www.instagram.com/kompassforening"]
+  }
+  </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KOMPASS – Ideell förening i Stockholm | Barn, Unga & Vuxna</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sun: #FF6B6B;
+  --coral: #FF6B6B;
+  --leaf: #3D7A85;
+  --sky: #4ECDC4;
+  --cream: #F0F8F9;
+  --dark: #1A3A40;
+  --mid: #4A6B72;
+  --light-green: #E0F4F6;
+  --light-orange: #FFF0EE;
+  --display: 'Fraunces', serif;
+  --body: 'Plus Jakarta Sans', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--dark);
+  font-family: var(--body);
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 18px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(94,143,154,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(28,43,26,0.07);
+}
+
+.nav-logo {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--dark);
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-logo .dot { color: #FF6B6B; }
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--mid);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: #FF6B6B; }
+
+.nav-cta {
+  background: var(--coral);
+  color: #fff !important;
+  padding: 10px 24px;
+  border-radius: 100px;
+  font-weight: 600 !important;
+  transition: background 0.2s, transform 0.2s !important;
+}
+
+.nav-cta:hover {
+  background: #1A3A40 !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 48px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #F0F8F9 0%, #E0F4F6 50%, #FFF0EE 100%);
+  z-index: 0;
+}
+
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.35;
+  z-index: 0;
+}
+
+.blob-1 {
+  width: 500px; height: 500px;
+  background: var(--sun);
+  top: -100px; right: -100px;
+  animation: blobFloat 8s ease-in-out infinite;
+}
+
+.blob-2 {
+  width: 350px; height: 350px;
+  background: var(--coral);
+  bottom: -50px; left: 10%;
+  animation: blobFloat 10s ease-in-out infinite reverse;
+}
+
+.blob-3 {
+  width: 300px; height: 300px;
+  background: var(--leaf);
+  top: 30%; right: 20%;
+  animation: blobFloat 12s ease-in-out infinite;
+}
+
+@keyframes blobFloat {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(20px,-20px) scale(1.05); }
+  66% { transform: translate(-10px,15px) scale(0.97); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  animation: fadeUp 0.9s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245,166,35,0.15);
+  border: 1px solid rgba(245,166,35,0.4);
+  color: #B87A10;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-family: var(--display);
+  font-size: clamp(28px, 5vw, 52px);
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--dark);
+  margin-bottom: 24px;
+  white-space: normal;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: #FF6B6B;
+}
+
+.hero p {
+  font-size: clamp(16px, 2vw, 19px);
+  color: var(--mid);
+  max-width: 560px;
+  margin: 0 auto 40px auto;
+  font-weight: 300;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: var(--coral);
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.25s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  background: #1E1E2E;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(240,106,69,0.25);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--dark);
+  padding: 16px 32px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: 2px solid rgba(28,43,26,0.2);
+  transition: all 0.25s;
+}
+
+.btn-secondary:hover {
+  border-color: var(--dark);
+  background: #1E1E2E;
+  color: #fff;
+}
+
+.hero-visual {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: fadeUp 0.9s 0.3s ease both;
+}
+
+.hero-compass {
+  width: 420px;
+  height: 420px;
+  opacity: 1;
+}
+
+/* ── STATS ── */
+.stats-bar {
+  background: linear-gradient(90deg, #1A3A40 0%, #3D7A85 100%);
+  padding: 32px 48px;
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  color: #fff;
+}
+
+.stat-num {
+  font-family: var(--display);
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--sun);
+  display: block;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* ── SECTIONS COMMON ── */
+section {
+  padding: 96px 48px;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-chip {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FF6B6B;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: var(--display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--leaf);
+}
+
+.section-sub {
+  font-size: 17px;
+  color: var(--mid);
+  max-width: 600px;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 56px;
+}
+
+/* ── OM OSS ── */
+#om-oss {
+  background: var(--cream);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-card {
+  background: #1E1E2E;
+  border-radius: 24px;
+  padding: 48px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::before {
+  content: '';
+  position: absolute;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: var(--coral);
+  opacity: 0.1;
+  top: -80px; right: -80px;
+}
+
+.about-card::after {
+  content: '';
+  position: absolute;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: var(--sun);
+  opacity: 0.08;
+  bottom: -60px; left: -40px;
+}
+
+.about-card-tag {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sun);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-card blockquote {
+  font-family: var(--display);
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-style: italic;
+  color: #fff;
+  line-height: 1.4;
+  position: relative;
+  z-index: 1;
+}
+
+.founder-chip {
+  margin-top: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 100px;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.founder-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--sun), var(--coral));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.founder-info span {
+  display: block;
+  font-size: 13px;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+}
+
+.founder-info small {
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+}
+
+.about-text p {
+  font-size: 16px;
+  color: var(--mid);
+  margin-bottom: 20px;
+  line-height: 1.9;
+  font-weight: 300;
+}
+
+.about-text strong {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.experience-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.pill {
+  background: var(--light-green);
+  border: 1px solid rgba(61,140,111,0.2);
+  color: var(--leaf);
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ── PROGRAM ── */
+#program {
+  background: #FFF0EE;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.program-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px 32px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(28,43,26,0.1);
+}
+
+.program-icon {
+  width: 56px; height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.icon-orange { background: #FFF0EE; }
+.icon-green { background: #E0F4F6; }
+.icon-blue { background: #E0F4F6; }
+.icon-yellow { background: #FFF0EE; }
+
+.program-card h3 {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.program-card p {
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.program-card .card-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.tag-coral { background: rgba(240,106,69,0.1); color: #FF6B6B; }
+.tag-green { background: #E0F4F6; color: #6D28D9; }
+.tag-blue { background: #E0F4F6; color: #1A5F66; }
+.tag-sun { background: #FFF0EE; color: #BE185D; }
+
+/* ── VÄRDERINGAR ── */
+.values-section {
+  background: var(--cream);
+}
+
+.values-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.value-box {
+  padding: 32px 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(28,43,26,0.08);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.value-box:hover {
+  background: var(--light-green);
+  border-color: rgba(61,140,111,0.3);
+}
+
+.value-emoji { font-size: 32px; margin-bottom: 14px; display: block; }
+
+.value-box h4 {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.value-box p {
+  font-size: 13px;
+  color: var(--mid);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ── PARTNERS TICKER ── */
+.partners-section {
+  background: #1E1E2E;
+  padding: 64px 0;
+  overflow: hidden;
+}
+
+.partners-label {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.ticker-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.ticker-wrapper::before,
+.ticker-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 120px;
+  z-index: 2;
+}
+
+.ticker-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--dark), transparent);
+}
+
+.ticker-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #1A3A40, transparent);
+}
+
+.ticker-track {
+  display: flex;
+  gap: 0;
+  animation: ticker 28s linear infinite;
+  width: max-content;
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.ticker-track:hover { animation-play-state: paused; }
+
+.partner-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  white-space: nowrap;
+}
+
+.partner-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--sun);
+  flex-shrink: 0;
+}
+
+.partner-item span {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.02em;
+}
+
+/* ── KONTAKT ── */
+#kontakt {
+  background: var(--light-green);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: var(--mid);
+  line-height: 1.9;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-icon {
+  width: 42px; height: 42px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contact-row span {
+  font-size: 15px;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.contact-row small {
+  display: block;
+  font-size: 12px;
+  color: var(--mid);
+  font-weight: 300;
+}
+
+/* FORM */
+.contact-form {
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+}
+
+.contact-form h3 {
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 28px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(28,43,26,0.12);
+  border-radius: 12px;
+  font-family: var(--body);
+  font-size: 15px;
+  color: var(--dark);
+  background: var(--cream);
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #4ECDC4;
+  background: #fff;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.form-submit {
+  width: 100%;
+  background: var(--coral);
+  color: #fff;
+  border: none;
+  padding: 16px;
+  border-radius: 100px;
+  font-family: var(--body);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+  margin-top: 8px;
+}
+
+.form-submit:hover {
+  background: #1E1E2E;
+  transform: translateY(-2px);
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #1E1E2E;
+  padding: 56px 48px 32px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.footer-brand {
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.08em;
+}
+
+.footer-brand .dot { color: #FF6B6B; }
+
+.footer-tagline {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  margin-top: 6px;
+  font-weight: 300;
+}
+
+.footer-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--sun); }
+
+.footer-bottom {
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: rgba(255,255,255,0.25);
+}
+
+.footer-org {
+  font-size: 12px;
+  color: rgba(255,255,255,0.25);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { padding: 16px 24px; }
+  .nav-links { display: none; }
+  .hero { padding: 100px 24px 60px; }
+  .hero-visual { display: none; }
+  .hero > div[style*="position:relative"] { display: none; }
+  .hero h1 { font-size: clamp(22px, 7vw, 38px); white-space: normal; }
+  .hero p { font-size: 15px; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-actions a { width: 100%; text-align: center; justify-content: center; }
+  section { padding: 48px 20px; }
+  .about-grid,
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .stats-bar { gap: 20px; padding: 24px 16px; flex-wrap: wrap; }
+  .stat-num { font-size: 26px !important; }
+  footer { padding: 40px 20px 24px; }
+  .footer-top { flex-direction: column; }
+  .kompass-wordmark { font-size: clamp(30px, 10vw, 60px); letter-spacing: 0.02em; }
+  .splash-tagline { font-size: clamp(13px, 3.5vw, 18px); }
+  .O-wrap { width: 0.72em; height: 0.88em; }
+  .program-grid { grid-template-columns: 1fr !important; }
+  .donate-grid { grid-template-columns: 1fr !important; }
+  .values-strip { grid-template-columns: 1fr 1fr; }
+  #medlemskap .section-inner > div { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .platform-grid { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: 1fr; }
+}
+
+/* ── SPLASH ── */
+.splash {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: #1E1E2E;
+}
+
+.splash-bg {
+  position: absolute;
+  inset: 0;
+  background: #5E8F9A;
+  z-index: 0;
+}
+
+.splash-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  z-index: 0;
+}
+
+.sb1 {
+  width: 600px; height: 600px;
+  background: #fff;
+  opacity: 0.08;
+  top: -150px; right: -100px;
+  animation: blobFloat 10s ease-in-out infinite;
+}
+
+.sb2 {
+  width: 400px; height: 400px;
+  background: #fff;
+  opacity: 0.06;
+  bottom: -100px; left: -80px;
+  animation: blobFloat 13s ease-in-out infinite reverse;
+}
+
+.sb3 {
+  width: 300px; height: 300px;
+  background: #fff;
+  opacity: 0.05;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  animation: blobFloat 8s ease-in-out infinite;
+}
+
+.splash-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 12px;
+  width: 100%;
+}
+
+/* ── WORDMARK ── */
+.kompass-wordmark {
+  display: flex;
+  align-items: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 900;
+  font-size: clamp(42px, 13vw, 220px);
+  color: #fff;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.k-letter {
+  display: inline-block;
+  animation: letterDrop 0.7s ease both;
+}
+
+.k-letter:nth-child(1) { animation-delay: 0.05s; }
+.k-letter:nth-child(3) { animation-delay: 0.15s; }
+.k-letter:nth-child(4) { animation-delay: 0.22s; }
+.k-letter:nth-child(5) { animation-delay: 0.29s; }
+.k-letter:nth-child(6) { animation-delay: 0.36s; }
+.k-letter:nth-child(7) { animation-delay: 0.43s; }
+
+@keyframes letterDrop {
+  from { opacity: 0; transform: translateY(-24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* O-wrap: sized to match em-height of surrounding letters */
+.O-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.7em;
+  height: 0.85em;
+  position: relative;
+  animation: letterDrop 0.7s 0.1s ease both;
+  flex-shrink: 0;
+}
+
+.compass-o {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 0 20px rgba(78,122,133,0.6));
+}
+
+/* Needle animation */
+#needle {
+  transform-origin: 50px 50px;
+  animation: needleSwing 4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+@keyframes needleSwing {
+  0%   { transform: rotate(-14deg); }
+  30%  { transform: rotate(10deg); }
+  55%  { transform: rotate(-6deg); }
+  78%  { transform: rotate(7deg); }
+  100% { transform: rotate(-14deg); }
+}
+
+/* ── PLUS ── */
+.kompass-plus {
+  font-size: clamp(36px, 6vw, 72px);
+  color: #F07830;
+  font-weight: 200;
+  line-height: 1;
+  margin-top: -4px;
+  animation: fadeUp 0.8s 0.55s ease both;
+}
+
+/* ── TAGLINE ── */
+.splash-tagline {
+  font-size: clamp(13px, 2.8vw, 32px);
+  color: rgba(255,255,255,0.7);
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  margin-top: 24px;
+  animation: fadeUp 0.8s 0.75s ease both;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* ── BADGE ── */
+.splash-badge {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: rgba(255,255,255,0.6);
+  padding: 8px 22px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  animation: fadeUp 0.8s 0.95s ease both;
+}
+
+/* ── SCROLL CUE ── */
+.scroll-cue {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  animation: fadeUp 0.8s 1.2s ease both;
+}
+
+.scroll-cue span {
+  font-size: 10px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.scroll-arrow {
+  animation: scrollBounce 2.2s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(10px); opacity: 1; }
+}
+
+/* ── MODALS ── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(26,58,64,0.7);
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+.modal-overlay.active { display: flex; }
+
+.modal-box {
+  background: #F0F8F9;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 780px;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+  from { opacity:0; transform: translateY(20px) scale(0.97); }
+  to   { opacity:1; transform: translateY(0) scale(1); }
+}
+
+.modal-header {
+  background: #1A3A40;
+  border-radius: 24px 24px 0 0;
+  padding: 32px 40px 28px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px; right: 24px;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: #fff;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s;
+}
+.modal-close:hover { background: rgba(255,255,255,0.3); }
+
+.modal-chip {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: #FF6B6B; margin-bottom: 8px;
+  display: block;
+}
+
+.modal-header h2 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.15;
+}
+.modal-header h2 em { font-style: italic; color: #FF6B6B; }
+.modal-header p {
+  font-size: 15px; color: rgba(255,255,255,0.65);
+  margin-top: 10px; font-weight: 300; line-height: 1.7;
+}
+
+.modal-body { padding: 36px 40px; }
+
+.modal-section-title {
+  font-family: 'Fraunces', serif;
+  font-size: 22px; font-weight: 700;
+  color: #1A3A40; margin-bottom: 16px; margin-top: 32px;
+}
+.modal-section-title:first-child { margin-top: 0; }
+
+.modal-activity {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 26px;
+  border-left: 4px solid #FF6B6B;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(94,143,154,0.07);
+}
+.modal-activity.teal { border-left-color: #3D7A85; }
+.modal-activity h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 18px; font-weight: 700;
+  color: #1A3A40; margin-bottom: 8px;
+}
+.modal-activity p { font-size: 14px; color: #4A6B72; line-height: 1.8; margin-bottom: 6px; }
+
+.modal-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.modal-pill {
+  background: #E0F4F6; color: #1A3A40;
+  padding: 4px 12px; border-radius: 100px;
+  font-size: 11px; font-weight: 600;
+}
+
+.modal-coming {
+  background: #E0F4F6;
+  border-radius: 12px;
+  padding: 20px 24px;
+  border: 1.5px dashed rgba(94,143,154,0.4);
+  margin-bottom: 14px;
+}
+.modal-coming h3 { font-family: 'Fraunces', serif; font-size: 16px; font-weight: 700; color: #3D7A85; margin-bottom: 6px; }
+.modal-coming p { font-size: 13px; color: #4A6B72; }
+
+.modal-divider { height: 1px; background: rgba(94,143,154,0.15); margin: 28px 0; }
+
+.modal-instagram {
+  background: linear-gradient(135deg, #1A3A40, #3D7A85);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  margin-top: 28px;
+}
+.modal-instagram h3 { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.modal-instagram p { font-size: 14px; color: rgba(255,255,255,0.7); margin-bottom: 18px; }
+.modal-instagram a {
+  background: #FF6B6B; color: #fff;
+  padding: 12px 24px; border-radius: 100px;
+  text-decoration: none; font-weight: 600; font-size: 14px;
+  display: inline-block;
+}
+
+@media(max-width: 600px) {
+  .modal-header { padding: 24px 24px 20px; }
+  .modal-body { padding: 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo"><span style="font-family:var(--display); font-weight:900; letter-spacing:0.06em; color:var(--dark);">KOMPASS</span></a>
+  <ul class="nav-links">
+    <li><a href="#om-oss">Om oss</a></li>
+    <li><a href="#program">Program & kurser</a></li>
+    <li><a href="#stod">Stöd oss</a></li>
+    <li><a href="#medlemskap">Bli medlem</a></li>
+    <li><a href="#kontakt" class="nav-cta">Kontakta oss</a></li>
+  </ul>
+</nav>
+
+<!-- LANDING SPLASH -->
+<div class="splash" id="splash">
+  <div class="splash-bg"></div>
+  <div class="splash-blob sb1"></div>
+  <div class="splash-blob sb2"></div>
+  <div class="splash-blob sb3"></div>
+
+  <div class="splash-content">
+    <!-- KOMPASS logotype with animated O -->
+    <div class="kompass-wordmark">
+      <span class="k-letter">K</span>
+      <span class="O-wrap">
+        <svg class="compass-o" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Face fill -->
+          <circle cx="50" cy="50" r="48" fill="#4A7A85"/>
+          <!-- Outer bezel -->
+          <circle cx="50" cy="50" r="47" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="3.5"/>
+          <!-- Inner ring -->
+          <circle cx="50" cy="50" r="36" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+          <!-- Cardinal tick marks - thick -->
+          <line x1="50" y1="3" x2="50" y2="13" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="50" y1="87" x2="50" y2="97" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="3" y1="50" x2="13" y2="50" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="87" y1="50" x2="97" y2="50" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Diagonal ticks -->
+          <line x1="16" y1="16" x2="21" y2="21" stroke="rgba(255,255,255,0.25)" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="84" y1="16" x2="79" y2="21" stroke="rgba(255,255,255,0.25)" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="16" y1="84" x2="21" y2="79" stroke="rgba(255,255,255,0.25)" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="84" y1="84" x2="79" y2="79" stroke="rgba(255,255,255,0.25)" stroke-width="1.8" stroke-linecap="round"/>
+          <!-- N label -->
+          <text x="50" y="21" text-anchor="middle" fill="#fff" font-size="9" font-family="serif" font-weight="bold">N</text>
+          <text x="50" y="86" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7.5" font-family="serif">S</text>
+          <text x="84" y="54" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7.5" font-family="serif">E</text>
+          <text x="16" y="54" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7.5" font-family="serif">W</text>
+          <!-- Animated needle -->
+          <g id="needle" style="transform-origin: 50px 50px;">
+            <!-- North needle - bold coral/orange to pop on teal -->
+            <polygon points="50,10 55,46 50,50 45,46" fill="#FF6B6B"/>
+            <!-- South needle - white dim -->
+            <polygon points="50,90 55,54 50,50 45,54" fill="rgba(255,255,255,0.4)"/>
+            <!-- Center ring -->
+            <circle cx="50" cy="50" r="5" fill="#fff" stroke="#fff" stroke-width="2.5"/>
+            <circle cx="50" cy="50" r="2" fill="#fff"/>
+          </g>
+        </svg>
+      </span>
+      <span class="k-letter">M</span>
+      <span class="k-letter">P</span>
+      <span class="k-letter">A</span>
+      <span class="k-letter">S</span>
+      <span class="k-letter">S</span>
+    </div>
+
+    <!-- Slogan -->
+    <p class="splash-tagline">Vi hittar vägen — tillsammans</p>
+  </div>
+</div>
+
+<!-- HERO (second screen) -->
+<div class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+
+  <div class="hero-content">
+    <h1>Din framtid börjar <em>här.</em></h1>
+    <p>KOMPASS är en ideell förening som stärker självförtroende och egenmakt hos barn, unga och vuxna i utsatta områden. Vi ger dig verktygen — vägen är din.</p>
+    <div class="hero-actions">
+      <a href="#program" class="btn-primary" aria-label="Utforska KOMPASS program för barn, unga och vuxna">Utforska våra program →</a>
+      <a href="#kontakt" class="btn-secondary" aria-label="Kontakta KOMPASS för samverkan">Samverka med oss</a>
+      <a href="#medlemskap" class="btn-secondary">Bli medlem</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat">
+    <span class="stat-num">1</span>
+    <div class="stat-label">Gemensamt mål</div>
+  </div>
+  <div class="stat">
+    <span class="stat-num">4</span>
+    <div class="stat-label">Kärnprogram</div>
+  </div>
+  <div class="stat">
+    <span class="stat-num">6+</span>
+    <div class="stat-label">Samverkanspartners</div>
+  </div>
+  <div class="stat">
+    <span class="stat-num">Stockholm</span>
+    <div class="stat-label">Hela staden</div>
+  </div>
+</div>
+
+<!-- OM OSS -->
+<section id="om-oss">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-card">
+          <div class="about-card-tag">Vår övertygelse</div>
+          <blockquote>"Vi ger människor en kompass — inte en karta. För deras väg är deras egen."</blockquote>
+          <div class="founder-chip">
+            <div class="founder-avatar" style="font-size:13px; font-weight:700; font-family:var(--body);">OM</div>
+            <div class="founder-info">
+              <span>Olivia Mayenga</span>
+              <small>Grundare &amp; Ordförande, KOMPASS</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <div class="section-chip">Om oss</div>
+        <h2 class="section-title">Grundat av<br><em>syskon.</em><br>Drivet av hjärta.</h2>
+        <p>KOMPASS är en syskonstyrd ideell förening — vi är fem syskon som alla sitter i styrelsen. Vi vet på djupet vad det innebär att behöva hitta sin väg i ett nytt land.</p>
+        <p>Vi kom till Sverige som flyktingar, utan svenska och utan nätverk. Vi barn lärde oss språket snabbt i skolan — men våra föräldrar stod ensamma inför myndigheter och system de inte förstod. Det tog sju år att få uppehållstillstånd. Sju år av ovisshet och kamp.</p>
+        <p><strong>I dag är vi alla vuxna med egna familjer och karriärer. Nu vill vi ge tillbaka.</strong> KOMPASS är vår gemensamma handling — för alla dem som befinner sig där vi en gång var.</p>
+
+
+      </div>
+    </div>
+
+    <!-- Värderingar -->
+    <div style="margin-top: 80px;">
+      <div class="section-chip">Våra kärnvärden</div>
+      <h2 class="section-title">Vad vi <em>tror på</em></h2>
+      <div class="values-strip">
+        <div class="value-box">
+          <span class="value-emoji">🌱</span>
+          <h4>Samhällspåverkan</h4>
+          <p>Varje insats skapar ringar på vattnet långt utanför oss.</p>
+        </div>
+
+        <div class="value-box">
+          <span class="value-emoji">💪</span>
+          <h4>Egenmakt</h4>
+          <p>Vi ger redskap, inte svar. Styrkan finns redan hos dig.</p>
+        </div>
+        <div class="value-box">
+          <span class="value-emoji">❤️</span>
+          <h4>Äkthet</h4>
+          <p>Vi vet vad vi talar om — för vi har levt det själva.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section id="program">
+  <div class="section-inner">
+    <div class="section-chip">Vad vi erbjuder</div>
+    <h2 class="section-title">Program & <em>Kurser</em></h2>
+    <p class="section-sub">Vi möter varje människa där de är. Alla våra program är anpassade till deltagarnas behov, ålder och situation — alltid med respekt och värme.</p>
+
+    <div class="program-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+      <div class="program-card" onclick="openModal('barn')" style="cursor:pointer;">
+        <div class="program-icon icon-blue">👧</div>
+        <h3>För barn</h3>
+        <p>Lovaktiviteter, efterskolverksamhet och roliga aktiviteter för de yngsta. Vi stärker självförtroendet tidigt.</p>
+        <span class="card-tag tag-coral" style="margin-top:20px; display:inline-block;">Läs mer →</span>
+      </div>
+
+      <div class="program-card" onclick="openModal('unga')" style="cursor:pointer;">
+        <div class="program-icon icon-green">🌟</div>
+        <h3>För unga</h3>
+        <p>Aktiviteter, musik och kurser som ger unga verktyg att tro på sin framtid och navigera livet med mod.</p>
+        <span class="card-tag tag-green" style="margin-top:20px; display:inline-block;">Läs mer →</span>
+      </div>
+
+      <div class="program-card" onclick="openModal('vuxna')" style="cursor:pointer;">
+        <div class="program-icon icon-yellow">🌍</div>
+        <h3>För vuxna</h3>
+        <p>Digital vägledning, kurser och stöd för vuxna att hitta sin väg i samhället — oavsett bakgrund.</p>
+        <span class="card-tag tag-blue" style="margin-top:20px; display:inline-block;">Läs mer →</span>
+      </div>
+
+    </div></div>
+  </div>
+</section>
+
+<!-- PARTNERS TICKER -->
+<div class="partners-section">
+  <p class="partners-label">Vi samverkar med</p>
+  <div class="ticker-wrapper">
+    <div class="ticker-track">
+      <div class="partner-item"><div class="partner-dot"></div><span>Stockholms Stadsmission</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Kungliga Musikhögskolan – SoundLab</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Hägersten-Älvsjö stadsdelsförvaltning</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Arbetsmarknadsförvaltningen</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Skärholmen Tillsammans</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Skärholmens stadsdelsförvaltning</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Botkyrka kommun</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>FOLK i Skärholmen</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Stockholms Stadsmission</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Kungliga Musikhögskolan – SoundLab</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Hägersten-Älvsjö stadsdelsförvaltning</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Arbetsmarknadsförvaltningen</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Skärholmen Tillsammans</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Skärholmens stadsdelsförvaltning</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>Botkyrka kommun</span></div>
+      <div class="partner-item"><div class="partner-dot"></div><span>FOLK i Skärholmen</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- STÖD OSS -->
+<section id="stod" style="background: var(--cream);">
+  <div class="section-inner">
+    <div class="section-chip">Stöd vårt arbete</div>
+    <h2 class="section-title">Tillsammans gör vi <em>skillnad.</em></h2>
+    <p class="section-sub">Varje bidrag går direkt till våra program och aktiviteter. Din insats hjälper barn, unga och vuxna att hitta sin väg.</p>
+
+    <div style="background: #1E1E2E; border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 32px;">
+      <div>
+        <span style="font-size:11px; color:rgba(255,255,255,0.4); letter-spacing:0.15em; text-transform:uppercase;">Organisationsnummer</span>
+        <div style="font-family: var(--display); font-size: 22px; color: #fff; font-weight: 700; margin-top: 4px;">802538-3897</div>
+      </div>
+      <div style="width:1px; height:40px; background:rgba(255,255,255,0.1);"></div>
+      <div>
+        <span style="font-size:11px; color:rgba(255,255,255,0.4); letter-spacing:0.15em; text-transform:uppercase;">Typ</span>
+        <div style="font-size:15px; color:rgba(255,255,255,0.5); margin-top:4px;">Ideell förening · Registrerad i Skärholmen</div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+      <div style="background:#fff; border-radius:20px; padding:32px 28px; border:1.5px solid rgba(45,79,232,0.1); text-align:center; transition: all 0.25s;" onmouseover="this.style.borderColor='var(--coral)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(45,79,232,0.1)'; this.style.transform='translateY(0)'">
+        <div style="font-size:36px; margin-bottom:14px;">🏦</div>
+        <h3 style="font-family:var(--display); font-size:18px; font-weight:700; color:var(--dark); margin-bottom:10px;">Bankgiro</h3>
+        <div style="font-family:var(--display); font-size:24px; font-weight:700; color:var(--coral); margin: 8px 0 6px;">5215-8854</div>
+        <p style="font-size:13px; color:var(--mid); font-weight:300;">Sätt in ditt bidrag via bankgiro hos din bank</p>
+      </div>
+
+      <div style="background:#fff; border-radius:20px; padding:32px 28px; border:1.5px solid rgba(45,79,232,0.1); text-align:center; transition: all 0.25s;" onmouseover="this.style.borderColor='var(--coral)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(45,79,232,0.1)'; this.style.transform='translateY(0)'">
+        <div style="font-size:36px; margin-bottom:14px;">💳</div>
+        <h3 style="font-family:var(--display); font-size:18px; font-weight:700; color:var(--dark); margin-bottom:10px;">Plusgiro</h3>
+        <div style="font-family:var(--display); font-size:24px; font-weight:700; color:var(--coral); margin: 8px 0 6px;">216 95 05-1</div>
+        <p style="font-size:13px; color:var(--mid); font-weight:300;">Betala enkelt via plusgiro</p>
+      </div>
+
+      <div style="background:#fff; border-radius:20px; padding:32px 28px; border:1.5px solid rgba(45,79,232,0.1); text-align:center;">
+        <div style="font-size:36px; margin-bottom:14px;">📱</div>
+        <h3 style="font-family:var(--display); font-size:18px; font-weight:700; color:var(--dark); margin-bottom:10px;">Swish</h3>
+        <div style="font-size:15px; color:var(--mid); margin: 8px 0 6px;">Kommer snart</div>
+        <p style="font-size:13px; color:var(--mid); font-weight:300;">Vi håller på att aktivera Swish — snart klart!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDLEMSKAP -->
+<section id="medlemskap" style="background: var(--light-green);">
+  <div class="section-inner">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+      
+      <!-- Counter -->
+      <div style="text-align:center;">
+        <div class="section-chip">Våra medlemmar</div>
+        <div style="font-family:var(--display); font-size:clamp(72px,10vw,120px); font-weight:900; color:var(--dark); line-height:1;" id="member-count">0</div>
+        <div style="font-size:14px; color:var(--mid); letter-spacing:0.15em; text-transform:uppercase; margin-top:8px;">Medlemmar och växer</div>
+        <p style="font-size:15px; color:var(--mid); margin-top:16px; font-weight:300;">Tillsammans är vi starkare. Varje medlem bidrar till att vi kan göra mer för fler.</p>
+      </div>
+
+      <!-- Signup -->
+      <div>
+        <div class="section-chip">Bli medlem</div>
+        <h2 class="section-title">Gå med i <em>KOMPASS</em></h2>
+        <p style="font-size:16px; color:var(--mid); line-height:1.9; margin-bottom:28px; font-weight:300;">Stöd vårt arbete och bli en del av rörelsen. Som medlem i KOMPASS visar du att du tror på ett samhälle där alla har möjlighet att hitta sin väg.</p>
+        <div style="background:#fff; border-radius:20px; padding:32px; box-shadow:0 4px 24px rgba(26,58,64,0.08);">
+          <form action="https://formspree.io/f/xojpvdar" method="POST" id="membership-form">
+          <div class="form-group">
+            <label>Namn</label>
+            <input type="text" name="namn" placeholder="Ditt fullständiga namn" required>
+          </div>
+          <div class="form-group">
+            <label>E-post</label>
+            <input type="email" name="epost" placeholder="din@epost.se" required>
+          </div>
+          <div class="form-group">
+            <label>Adress</label>
+            <input type="text" name="adress" placeholder="Gatuadress, postnummer och ort">
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+            <div class="form-group">
+              <label>Födelseår</label>
+              <input type="text" name="fodelseår" placeholder="ÅÅÅÅ" maxlength="4">
+            </div>
+            <div class="form-group">
+              <label>Födelsemånad</label>
+              <select name="fodelsemanad"><option value="">Välj månad</option><option>Januari</option><option>Februari</option><option>Mars</option><option>April</option><option>Maj</option><option>Juni</option><option>Juli</option><option>Augusti</option><option>September</option><option>Oktober</option><option>November</option><option>December</option></select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Telefonnummer</label>
+            <input type="tel" name="telefon" placeholder="070-000 00 00">
+          </div>
+          <button type="submit" class="form-submit" style="background:var(--coral);">Bli medlem →</button>
+          <p style="font-size:12px; color:var(--mid); margin-top:12px; text-align:center;">Medlemskapet är kostnadsfritt. Vi kontaktar dig med mer information.</p>
+          <p style="font-size:11px; color:var(--mid); margin-top:6px; text-align:center; opacity:0.7;">Genom att bli medlem godkänner du att KOMPASS sparar dina uppgifter i enlighet med GDPR. Dina uppgifter delas aldrig med tredje part.</p>
+          </form>
+          <div id="form-success" style="display:none; text-align:center; padding:20px;">
+            <div style="font-size:40px; margin-bottom:12px;">✅</div>
+            <h3 style="font-family:var(--display); color:var(--dark); margin-bottom:8px;">Tack!</h3>
+            <p style="font-size:15px; color:var(--mid);">Vi har tagit emot din ansökan och hör av oss snart!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+// Animate counter to 67 (mid-range of 51-100)
+function animateCounter() {
+  const el = document.getElementById('member-count');
+  if (!el) return;
+  const target = 70;
+  let current = 0;
+  const duration = 2000;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+    }
+    el.textContent = Math.floor(current);
+  }, 16);
+}
+
+// Trigger when visible
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { animateCounter(); observer.disconnect(); } });
+}, { threshold: 0.3 });
+const countEl = document.getElementById('member-count');
+if (countEl) observer.observe(countEl);
+
+function handleMembership() {
+  const btn = event.target;
+  btn.textContent = '✓ Tack! Vi hör av oss snart.';
+  btn.style.background = 'var(--leaf)';
+  btn.disabled = true;
+}
+</script>
+
+<!-- KONTAKT -->
+<section id="kontakt">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-chip">Kontakt</div>
+        <h2 class="section-title">Låt oss<br><em>prata.</em></h2>
+        <p>Är du en organisation, myndighet eller stadsdel som vill göra verklig skillnad? Eller är du en privatperson som vill veta mer om våra program? Vi hör gärna från dig.</p>
+
+        <div class="contact-details">
+          <div class="contact-row">
+            <div class="contact-icon">📍</div>
+            <div>
+              <span>Skärholmens stadsdel</span>
+              <small>Verksamma i hela Stockholms stad</small>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <span><a href="mailto:info@kompassforening.se" style="color:var(--dark); font-weight:600; text-decoration:none;">info@kompassforening.se</a></span>
+              <small>Vi svarar inom 24 timmar</small>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon" style="font-size:22px;">🤝</div>
+            <div>
+              <span>Öppen för samverkan</span>
+              <small>Kommuner · Myndigheter · Föreningar</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Skicka ett meddelande</h3>
+        <div class="form-group">
+          <label>Namn</label>
+          <input type="text" placeholder="Ditt namn eller organisation">
+        </div>
+        <div class="form-group">
+          <label>E-post</label>
+          <input type="email" placeholder="din@epost.se">
+        </div>
+        <div class="form-group">
+          <label>Jag kontaktar er som...</label>
+          <select>
+            <option>Kommunal aktör / Myndighet</option>
+            <option>Ideell organisation</option>
+            <option>Privatperson / Förälder</option>
+            <option>Journalist / Media</option>
+            <option>Annat</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Meddelande</label>
+          <textarea placeholder="Berätta om ditt ärende..."></textarea>
+        </div>
+        <button class="form-submit">Skicka meddelande →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-tagline">KOMPASS · Ideell förening · Org.nr 802538-3897 · Stockholm</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#om-oss">Om oss</a></li>
+        <li><a href="#program">Program & kurser</a></li>
+        <li><a href="#stod">Stöd oss</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 KOMPASS Ideell förening · Org.nr 802538-3897</p>
+      <p class="footer-org">BG 5215-8854 · PG 216 95 05-1 · Skärholmen, Stockholm</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ── MODALS ── -->
+<div class="modal-overlay" id="modal-barn" onclick="if(event.target===this)closeModal('barn')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeModal('barn')">✕</button>
+      <span class="modal-chip">Program för barn</span>
+      <h2>Aktiviteter för <em>barn</em></h2>
+      <p>Gratis lovaktiviteter och program för barn i Stockholm. Glädje, gemenskap och tro på sig själv — det är vad vi bygger.</p>
+    </div>
+    <div class="modal-body">
+      <div class="section-chip">Om våra barnaktiviteter</div>
+      <h3 class="modal-section-title">Lov, lek och lärande</h3>
+      <p style="font-size:15px;color:#4A6B72;line-height:1.85;margin-bottom:12px;">Just nu kör vi lovaktiviteter för barn under skollov. Det är gratis, öppet för alla och kräver ingen anmälan — bara att dyka upp!</p>
+      <p style="font-size:15px;color:#4A6B72;line-height:1.85;margin-bottom:24px;">Vi arbetar även med ett kommande <strong>årsprojekt</strong> där vi startar efterskolverksamhet på två skolor i Skärholmen och Bredäng. Mer information om detta kommer snart — följ oss på Instagram för att vara först med att få reda på det!</p>
+      <div class="modal-divider"></div>
+      <div class="section-chip">Kommande aktiviteter</div>
+      <h3 class="modal-section-title">🐣 Påsklovet 2026</h3>
+      <div class="modal-activity">
+        <h3>🎵 KOMPASS x SoundLab — Musik med Kungliga Musikhögskolan</h3>
+        <p>Vi samverkar med Kungliga Musikhögskolan – SoundLab för ett unikt musikprojekt för unga med driv för musik. SoundLab riktar sig till ungdomar som kanske har hög tröskel att delta i kulturaktiviteter men som brinner för musik — här får deltagarnas egna intressen styra innehållet.</p>
+        <p style="margin-top:8px;">Handplockade pedagoger — från väletablerade professionella musiker till lokala musikprofiler — möter, lär ut och musicerar tillsammans med deltagarna i Värmeverkets lokaler.</p>
+        <p style="margin-top:8px;"><strong>Påsklovet:</strong> Öppet hus och prova-på — kom och känn på stämningen, ingen anmälan krävs!</p>
+        <p style="margin-top:6px;"><strong>Sommarlovet (15–18 juni):</strong> Intensivvecka när verksamheten drar igång på riktigt.</p>
+        <p style="margin-top:6px;"><strong>Hösten:</strong> Reguljär verksamhet med träffar en gång per vecka.</p>
+        <div class="modal-meta">
+          <span class="modal-pill">📅 7–8 april (prova-på)</span>
+          <span class="modal-pill">📍 Värmeverket, Bredäng</span>
+          <span class="modal-pill">🎯 Från 11 år</span>
+          <span class="modal-pill">💛 Gratis</span>
+        </div>
+      </div>
+      <div class="modal-activity">
+        <h3>🐣 Påsklovsevent på FOLK</h3>
+        <p>Pyssel, sällskapsspel, karaoke och fika inomhus — påskjakt med gömt godis och grillning utomhus. Tillsammans med Drömstort ordnar vi en dag fylld av glädje för hela familjen!</p>
+        <div class="modal-meta">
+          <span class="modal-pill">📅 9–10 april</span>
+          <span class="modal-pill">📍 FOLK, Skärholmen</span>
+          <span class="modal-pill">🎯 Alla barn</span>
+          <span class="modal-pill">💛 Gratis</span>
+          <span class="modal-pill">👋 Ingen anmälan</span>
+        </div>
+      </div>
+      <div class="modal-coming">
+        <h3>🏫 Efterskolverksamhet — Kommer snart</h3>
+        <p>Vi planerar regelbunden efterskolverksamhet på två skolor i Skärholmen och Bredäng. Mer information annonseras inom kort!</p>
+      </div>
+      <div class="modal-instagram">
+        <h3>Följ oss på Instagram</h3>
+        <p>Vi uppdaterar aktiviteter flitigast på Instagram — följ oss för att aldrig missa ett event!</p>
+        <a href="https://instagram.com/kompassforening" target="_blank">📱 @kompassforening</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-unga" onclick="if(event.target===this)closeModal('unga')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeModal('unga')">✕</button>
+      <span class="modal-chip">Program för unga</span>
+      <h2>Aktiviteter och kurser för <em>unga</em></h2>
+      <p>Oavsett om du vill ha kul, utforska musik eller ta nästa steg mot jobb och studier — vi finns här.</p>
+    </div>
+    <div class="modal-body">
+      <div style="background:#FFF0EE;border-radius:12px;padding:14px 18px;margin-bottom:12px;border-left:4px solid #FF6B6B;font-size:14px;color:#1A3A40;"><strong>🌟 Yngre unga</strong> — Sport, musik och events för dig i tonåren</div>
+      <div style="background:#E0F4F6;border-radius:12px;padding:14px 18px;margin-bottom:24px;border-left:4px solid #3D7A85;font-size:14px;color:#1A3A40;"><strong>🎯 Äldre unga 16–29 år</strong> — Utan jobb eller studier? Vi erbjuder workshops och stöd</div>
+      <div class="modal-divider"></div>
+      <div class="modal-activity">
+        <h3>🏆 Spring Camp — Idrott, kultur & gemenskap</h3>
+        <p>Prova olika idrotter, delta i kreativa aktiviteter och träffa nya vänner i Bredängshallen! Arrangeras av Project Playground, Stockholms stad, Gålöstiftelsen och RF-SISU i samverkan med KOMPASS.</p>
+        <div class="modal-meta">
+          <span class="modal-pill">📅 10 april</span><span class="modal-pill">🕡 18:30–20:30</span><span class="modal-pill">📍 Bredängshallen, Concordiavägen 21</span><span class="modal-pill">🎯 13–18 år</span><span class="modal-pill">💛 Gratis</span>
+        </div>
+      </div>
+      <div class="modal-activity teal">
+        <h3>🎵 KOMPASS x SoundLab — Sommar 2026</h3>
+        <p>Under sommaren drar SoundLab igång på riktigt! Handplockade pedagoger — från väletablerade professionella musiker till lokala musikprofiler — möter, lär ut och musicerar tillsammans med deltagarna.</p>
+        <p style="margin-top:8px;">Målet är att skapa en aktivitet som präglas av musikglädje, där det inte finns några krav på förkunskaper — bara viljan att utforska musik.</p>
+        <p style="margin-top:8px;"><strong>Efter intensivveckan:</strong> Reguljär verksamhet med träffar en gång per vecka under hösten.</p>
+        <div class="modal-meta">
+          <span class="modal-pill">📅 15–18 juni</span><span class="modal-pill">📍 Värmeverket, Bredäng</span><span class="modal-pill">🎯 Från 11 år</span><span class="modal-pill">💛 Gratis</span>
+        </div>
+      </div>
+      <div class="modal-divider"></div>
+      <h3 class="modal-section-title">🎯 För dig 16–29 år</h3>
+      <div class="modal-activity teal">
+        <h3>🤝 Digital vägledning — Stockholms Stadsmission</h3>
+        <p>Strukturerade kurstillfällen där vi hjälper dig ansöka om försörjningsstöd digitalt. 2 timmar per tillfälle.</p>
+        <p style="margin-top:8px;"><strong>En dag för alla. En dag endast för kvinnor.</strong></p>
+        <div class="modal-meta"><span class="modal-pill">📅 Måndagar från 20 april</span><span class="modal-pill">🕓 16:00–18:00</span><span class="modal-pill">📍 Stockholms Stadsmission, Vårberg</span><span class="modal-pill">💛 Gratis</span></div>gar från 20 april</span><span class="modal-pill">🕓 16:00–18:00</span><span class="modal-pill">📍 Stockholms Stadsmission, Vårberg</span><span class="modal-pill">💛 Gratis</span></div>
+      </div>
+      <div class="modal-coming">
+        <h3>🚀 Ung Entreprenör — Kurs i att starta eget · Kommer snart</h3>
+        <p>Har du en idé? Driv? Vilja att bygga något eget? Då är det här för dig.</p>
+        <p style="margin-top:8px;">KOMPASS startar en kurs för unga som vill lära sig allt om att starta och driva ett eget företag — från första tanke till verklighet. Kursen pågår under en längre period med lärarledda träffar varje vecka, och du som fullföljer den får ett <strong>diplom</strong> som bevisar dina kunskaper.</p>
+        <p style="margin-top:8px;">Under kursens gång går vi steg för steg igenom hela processen — affärsidé, företagsformer, ekonomi, marknadsföring och hur du faktiskt tar steget. Etablerade entreprenörer kommer som gästföreläsare för att dela med sig av sina erfarenheter och inspirera.</p>
+        <p style="margin-top:8px;">Vi besöker coworking spaces, innovationshubbar och riktiga företag — så du ser hur idéer blir verklighet och bygger ditt nätverk tidigt. Vi tar även upp jobbsökning, CV-skrivning och besöker arbetsplatser, för att ge dig alla vägar framåt.</p>
+        <p style="margin-top:8px;">Målet är enkelt: att du lämnar kursen redo att starta eget — med verktygen, kontakterna och självförtroendet som krävs.</p>
+      </div>
+      <div class="modal-instagram">
+        <h3>Följ oss på Instagram</h3>
+        <p>Vi annonserar nya aktiviteter flitigast på Instagram!</p>
+        <a href="https://instagram.com/kompassforening" target="_blank">📱 @kompassforening</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-vuxna" onclick="if(event.target===this)closeModal('vuxna')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeModal('vuxna')">✕</button>
+      <span class="modal-chip">Program för vuxna</span>
+      <h2>Kurser och stöd för <em>vuxna</em></h2>
+      <p>Vi hjälper vuxna navigera samhällets system — utan pekpinnar, utan krav och utan kostnad.</p>
+    </div>
+    <div class="modal-body">
+      <div style="background:#1A3A40;border-radius:14px;padding:20px 24px;margin-bottom:24px;">
+        <p style="font-family:'Fraunces',serif;font-style:italic;font-size:17px;color:#fff;line-height:1.5;margin:0;">Vi ersätter inte myndighetsutövning — vi stärker individens förmåga att själv navigera i systemen.</p>
+      </div>
+      <div class="modal-activity teal">
+        <h3>💻 Digital vägledning — Försörjningsstöd e-ansökan</h3>
+        <p>Strukturerade kurstillfällen där vi hjälper dig ansöka om försörjningsstöd digitalt. 2 timmar per tillfälle.</p>
+        <div class="modal-meta">
+          <span class="modal-pill">📅 Måndagar från 20 april</span><span class="modal-pill">🕓 16:00–18:00</span><span class="modal-pill">📍 Stockholms Stadsmission, Vårberg</span><span class="modal-pill">💛 Gratis</span>
+        </div>
+      </div>
+      <div class="modal-divider"></div>
+      <h3 class="modal-section-title">På gång</h3>
+      <div class="modal-coming"><h3>📚 Läxhjälp för SFI-studier · Kommer snart</h3><p>Stöd för dig som studerar SFI.</p></div>
+
+      <div class="modal-instagram">
+        <h3>Följ oss på Instagram</h3>
+        <p>Vi annonserar nya kurser flitigast på Instagram!</p>
+        <a href="https://instagram.com/kompassforening" target="_blank">📱 @kompassforening</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal(type) {
+  document.getElementById('modal-' + type).classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(type) {
+  document.getElementById('modal-' + type).classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') ['barn','unga','vuxna'].forEach(closeModal);
+});
+</script>
+
+</body>
+</html>

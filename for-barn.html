@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>För barn — KOMPASS</title>
+
+<style>
+:root {
+  --teal: #5E8F9A;
+  --teal-dark: #1A3A40;
+  --teal-mid: #3D7A85;
+  --coral: #FF6B6B;
+  --cream: #F0F8F9;
+  --light: #E0F4F6;
+  --mid: #4A6B72;
+  --display: 'Fraunces', serif;
+  --body: 'Plus Jakarta Sans', sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--cream); color: var(--teal-dark); font-family: var(--body); font-weight:300; line-height:1.7; }
+
+nav {
+  position: fixed; top:0; left:0; right:0; z-index:100;
+  padding: 16px 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(240,248,249,0.96); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(94,143,154,0.15);
+}
+.nav-logo { font-family: var(--display); font-weight:900; font-size:22px; color:var(--teal-dark); text-decoration:none; letter-spacing:0.06em; }
+.nav-links { display:flex; gap:32px; list-style:none; align-items:center; }
+.nav-links a { text-decoration:none; color:var(--mid); font-size:14px; font-weight:500; transition:color 0.2s; }
+.nav-links a:hover { color:var(--coral); }
+.nav-cta { background:var(--coral) !important; color:#fff !important; padding:10px 22px; border-radius:100px; font-weight:600 !important; }
+
+.hero-sub {
+  min-height: 42vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  padding: 120px 48px 60px;
+  background: var(--teal-dark);
+  position: relative; overflow: hidden;
+}
+.hero-sub::before {
+  content:''; position:absolute; inset:0;
+  background: radial-gradient(ellipse at 60% 40%, #243868 0%, #1A3A40 60%, #0D1F24 100%);
+}
+.hero-sub-content { position:relative; z-index:1; max-width:700px; }
+.hero-sub-chip { display:inline-block; font-size:11px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--coral); margin-bottom:14px; }
+.hero-sub h1 { font-family:var(--display); font-size:clamp(36px,6vw,72px); font-weight:900; color:#fff; line-height:1.1; margin-bottom:20px; }
+.hero-sub h1 em { font-style:italic; color:var(--coral); }
+.hero-sub p { font-size:17px; color:rgba(255,255,255,0.65); font-weight:300; line-height:1.85; }
+
+.back-btn { display:inline-flex; align-items:center; gap:8px; margin-bottom:28px; color:rgba(255,255,255,0.6); text-decoration:none; font-size:13px; font-weight:500; transition:color 0.2s; }
+.back-btn:hover { color:#fff; }
+
+section { padding: 72px 48px; max-width: 900px; margin: 0 auto; }
+
+.section-chip { display:inline-block; font-size:11px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--coral); margin-bottom:12px; }
+.section-title { font-family:var(--display); font-size:clamp(28px,4vw,44px); font-weight:900; color:var(--teal-dark); margin-bottom:16px; line-height:1.15; }
+.section-title em { font-style:italic; color:var(--teal-mid); }
+.section-text { font-size:16px; color:var(--mid); line-height:1.95; margin-bottom:20px; }
+
+.activity-card {
+  background:#fff; border-radius:16px; padding:28px 32px;
+  border-left:4px solid var(--coral); margin-bottom:20px;
+  box-shadow: 0 2px 16px rgba(94,143,154,0.08);
+}
+.activity-card h3 { font-family:var(--display); font-size:20px; font-weight:700; color:var(--teal-dark); margin-bottom:10px; }
+.activity-card p { font-size:15px; color:var(--mid); margin-bottom:6px; }
+.activity-meta { display:flex; flex-wrap:wrap; gap:12px; margin-top:14px; }
+.meta-pill { background:var(--light); color:var(--teal-dark); padding:5px 14px; border-radius:100px; font-size:12px; font-weight:600; }
+
+.coming-box {
+  background: var(--light); border-radius:16px; padding:32px;
+  border: 1.5px dashed rgba(94,143,154,0.4); text-align:center; margin-bottom:20px;
+}
+.coming-box h3 { font-family:var(--display); font-size:18px; color:var(--teal-mid); margin-bottom:8px; }
+.coming-box p { font-size:14px; color:var(--mid); }
+
+.instagram-box {
+  background: linear-gradient(135deg, var(--teal-dark), var(--teal-mid));
+  border-radius:20px; padding:40px; text-align:center; margin-top:48px;
+}
+.instagram-box h3 { font-family:var(--display); font-size:26px; font-weight:700; color:#fff; margin-bottom:12px; }
+.instagram-box p { font-size:15px; color:rgba(255,255,255,0.7); margin-bottom:24px; }
+.instagram-box a {
+  display:inline-flex; align-items:center; gap:10px;
+  background:var(--coral); color:#fff; padding:14px 28px; border-radius:100px;
+  text-decoration:none; font-weight:600; font-size:15px; transition:all 0.2s;
+}
+.instagram-box a:hover { background:#fff; color:var(--teal-dark); }
+
+.divider { height:1px; background:rgba(94,143,154,0.15); margin:48px 0; }
+
+footer { background:var(--teal-dark); padding:40px 48px; text-align:center; }
+footer p { font-size:12px; color:rgba(255,255,255,0.3); }
+footer .footer-logo { font-family:var(--display); font-size:22px; font-weight:900; color:#fff; letter-spacing:0.08em; margin-bottom:8px; }
+
+@media(max-width:768px) {
+  nav { padding:14px 20px; }
+  .nav-links { display:none; }
+  .hero-sub { padding:100px 24px 48px; }
+  section { padding:48px 24px; }
+  footer { padding:32px 20px; }
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">KOMPASS</a>
+  <ul class="nav-links">
+    <li><a href="index.html#om-oss">Om oss</a></li>
+    <li><a href="index.html#program">Program & kurser</a></li>
+    <li><a href="index.html#stod">Stöd oss</a></li>
+    <li><a href="index.html#kontakt" class="nav-cta">Kontakta oss</a></li>
+  </ul>
+</nav>
+
+
+<div class="hero-sub">
+  <div class="hero-sub-content">
+    <a href="index.html#program" class="back-btn">← Tillbaka till program</a>
+    <div class="hero-sub-chip">Program för barn</div>
+    <h1>Aktiviteter för <em>barn</em></h1>
+    <p>Vi erbjuder lovaktiviteter och roliga program för barn i Stockholm. Målet är enkelt — att varje barn ska känna glädje, gemenskap och tro på sig själv.</p>
+  </div>
+</div>
+
+<section>
+  <div class="section-chip">Om våra barnaktiviteter</div>
+  <h2 class="section-title">Lov, lek och <em>lärande</em></h2>
+  <p class="section-text">Just nu kör vi lovaktiviteter för barn under skollov. Det är gratis, öppet för alla och kräver ingen anmälan — bara att dyka upp!</p>
+  <p class="section-text">Vi arbetar även med ett kommande <strong>årsprojekt</strong> där vi startar efterskolverksamhet på två skolor i Skärholmen och Bredäng. Mer information om detta kommer snart — följ oss på Instagram för att vara först med att få reda på det!</p>
+
+  <div class="divider"></div>
+
+  <div class="section-chip">Kommande aktiviteter</div>
+  <h2 class="section-title">Påsklovet <em>2026</em></h2>
+
+  <div class="activity-card">
+    <h3>🎵 KOMPASS x SoundLab — Musik med Kungliga Musikhögskolan</h3>
+    <p>Vi samverkar med Kungliga Musikhögskolan – SoundLab för ett unikt musikprojekt för unga med driv för musik. SoundLab riktar sig till ungdomar som kanske har hög tröskel att delta i kulturaktiviteter men som brinner för musik — här får deltagarnas egna intressen styra innehållet.</p>
+    <p style="margin-top:10px;">Handplockade pedagoger — från väletablerade professionella musiker till lokala musikprofiler — möter, lär ut och musicerar tillsammans med deltagarna i Värmeverkets lokaler.</p>
+    <p style="margin-top:10px;"><strong>Påsklovet:</strong> Öppet hus och prova-på — kom och känn på stämningen, ingen anmälan krävs!</p>
+    <p style="margin-top:6px;"><strong>Sommarlovet (15–18 juni):</strong> Intensivvecka när verksamheten drar igång på riktigt.</p>
+    <p style="margin-top:6px;"><strong>Hösten:</strong> Reguljär verksamhet med träffar en gång per vecka.</p>
+    <div class="activity-meta">
+      <span class="meta-pill">📅 7–8 april (prova-på)</span>
+      <span class="meta-pill">📍 Värmeverket, Bredäng</span>
+      <span class="meta-pill">🎯 Från 11 år</span>
+      <span class="meta-pill">💛 Gratis</span>
+    </div>
+  </div>
+
+  <div class="activity-card">
+    <h3>🐣 Påsklovsevent på FOLK</h3>
+    <p>Pyssel, sällskapsspel, karaoke och fika inomhus — påskjakt med gömt godis och grillning utomhus. Tillsammans med Drömstort ordnar vi en dag fylld av glädje för hela familjen!</p>
+    <div class="activity-meta">
+      <span class="meta-pill">📅 9–10 april</span>
+      <span class="meta-pill">📍 FOLK, Skärholmen</span>
+      <span class="meta-pill">🎯 Alla barn</span>
+      <span class="meta-pill">💛 Gratis</span>
+      <span class="meta-pill">👋 Ingen anmälan</span>
+    </div>
+  </div>
+
+  <div class="coming-box">
+    <h3>🏫 Efterskolverksamhet — Kommer snart</h3>
+    <p>Vi planerar regelbunden efterskolverksamhet på två skolor i Skärholmen och Bredäng. Mer information annonseras inom kort!</p>
+  </div>
+
+  <div class="instagram-box">
+    <h3>Följ oss på Instagram</h3>
+    <p>Vi uppdaterar aktiviteter och nyheter flitigast på Instagram. Följ oss för att aldrig missa ett event!</p>
+    <a href="https://instagram.com/kompassforening" target="_blank">📱 @kompassforening</a>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-logo">KOMPASS</div>
+  <p>Ideell förening · Org.nr 802538-3897 · Skärholmen, Stockholm</p>
+  <p style="margin-top:6px;">BG 5215-8854 · PG 216 95 05-1 · info@kompass.se</p>
+</footer>
+
+</body>
+</html>
